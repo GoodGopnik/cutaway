@@ -1,9 +1,74 @@
 @import "vars";
 @import "libs";
 @import "fonts";
-
-
-
-
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.container {
+    padding-left: 180px;
+    padding-right: 180px;
+}
+.block__home {
+    background-image: url(../images/блок1/samantha-gades-BlIhVfXbi9s-unsplash1.webp);
+    min-height: 960px;
+}
+.block__home__nav {
+    display: flex;
+    justify-content: space-between;
+    .block__home__nav__img {
+        img {
+            padding-top: 50px;
+        }
+    }
+    .block__home__menu {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 50px;
+        }
+        li {
+            list-style: none;
+            padding: 40px;
+        }
+        a {
+            text-decoration: none;
+            font-family: $Balthazar;
+            color: $dark;
+            font-size: 24px;
+        }
+        a:hover {
+            color: $cream;
+            transition: 0.3s;
+        }
+    }
+}
+.block__home__text {
+    padding-top: 200px;
+    h2 {
+        font-family: $Balthazar;
+        font-size: 36px;
+        color: $dark;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 40px;
+    }
+    p {
+        font-family: $Balthazar;
+        font-size: 24px;
+        color: $dark;
+        margin: 0;
+        padding: 0;
+    }
+}
 
 @import "media";
+
+
+// $Balthazar: 'Balthazar', serif;
+// $dark: #000000;
+// $cream: #EEE5E5;
+// $easyСream: #FBFBFA;
+// $gray: #F1F1EE;
+// $easyBanana: #FFFFFC;
+// $darkGray: #9F9F9F;
