@@ -1,0 +1,15 @@
+@media(max-width: 740px) {
+    .block__home__nav .block__home__menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .block__home__nav .block__home__menu li {
+        padding-top: 20px;
+    }
+    .block__home__menu {
+        display: none;
+    }
+    .block__home__menu__btn {
+        display: block;
+    }
+}
