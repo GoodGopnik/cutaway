@@ -149,7 +149,29 @@
     transform: rotate(-45deg);
     transition: 0.5s;
 }
-
+// service
+.services__about__block {
+    background: $easyСream;
+    h2 {
+        padding: 0;
+        margin: 0;
+        font-size: 48px;
+        color: $dark;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 100px;
+        position: relative;
+    }
+    .text__border {
+        width: 186px;
+        height: 5px;
+        background: $dark;
+        margin: 0 auto;
+        margin-bottom: 63px;
+        border-radius: 5px;
+    }
+}
 
 @import "media";
 

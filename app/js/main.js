@@ -5,7 +5,7 @@ let burgerBlock2 = document.querySelector('.burger__block2');
 let burgerBlock3 = document.querySelector('.burger__block3');
 
 
-btn.addEventListener('click', () =>{
+btn.addEventListener('click', () => {
     blockHomeMenu.classList.toggle('display__block__nav');
     blockHomeMenu.classList.toggle('block__home__menu__right');
     burgerBlock1.classList.toggle('burger__block1__active');
