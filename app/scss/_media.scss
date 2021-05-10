@@ -1,4 +1,4 @@
-@media(max-width: 740px) {
+@media(max-width: 755px) {
     .block__home__nav .block__home__menu ul {
         display: flex;
         flex-direction: column;
@@ -7,9 +7,21 @@
         padding-top: 20px;
     }
     .block__home__menu {
-        display: none;
+        display: block;
+        position: absolute;
+        position: fixed;
+        height: 100%;
+        right: -500px;
+        top: 0;
+        transition: 1s;
+    }
+    .block__home__nav .block__home__menu ul {
+        padding-top: 0;
     }
     .block__home__menu__btn {
         display: block;
+        position: fixed;
+        right: 0;
+        top: 0;
     }
 }

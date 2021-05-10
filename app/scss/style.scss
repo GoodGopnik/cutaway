@@ -9,16 +9,16 @@
     max-width: 1560px;
     width: 100%;
     margin: 0 auto;
-    padding-right: 10px;
-    padding-left: 10px;
 }
 .block__home {
     background: url(../images/блок1/samantha-gades-BlIhVfXbi9s-unsplash1.webp)50% no-repeat;
     min-height: 960px;
+    padding: 0 10px;
 }
 .block__home__nav {
     display: flex;
     justify-content: space-between;
+    position: relative;
     .block__home__nav__img {
         img {
             padding-top: 50px;
@@ -32,6 +32,7 @@
         }
         li {
             list-style: none;
+            // margin-right: 20px;
         }
         li:nth-child(-n+3) {
             padding-right: 40px;
@@ -68,9 +69,14 @@
 }
 .block__home__menu__btn {
     display: none;
+    z-index: 1;
 }
 .display__block__nav {
-    display: block;
+    display: block !important;
+    background: $cream;
+}
+.block__home__menu__right {
+    right: 0 !important;
 }
 
 @import "media";
