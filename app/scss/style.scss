@@ -68,7 +68,7 @@
 }
 .block__home__menu__btn {
     display: none;
-    z-index: 1;
+    z-index: 2;
     width: 45px;
     height: 50px;
     outline: none;
@@ -76,18 +76,20 @@
     border: none;
     border-radius: 8px;
     color: $dark;
-}
+    }
 .block__home__menu__btn:active {
     background: $darkGray;
     transition: 0.5s;
 }
 .display__block__nav {
-    display: block !important;
+    display: block;
     background: $easyBanana;
-}
-.block__home__menu__right {
+    z-index: 1;
     right: 0 !important;
 }
+// .block__home__menu__right {
+    
+// }
 .burger {
     display: flex;
     flex-direction: column;
@@ -152,12 +154,14 @@
 // service
 .services__about__block {
     background: $easyСream;
+    padding-bottom: 80px;
     h2 {
         padding: 0;
         margin: 0;
         font-size: 48px;
         color: $dark;
         font-weight: 400;
+        font-family: $Balthazar;
         text-transform: uppercase;
         text-align: center;
         padding-top: 100px;
@@ -170,6 +174,80 @@
         margin: 0 auto;
         margin-bottom: 63px;
         border-radius: 5px;
+    }
+}
+.service__blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.service__block__content {
+    max-width: 720px;
+    width: 100%;
+    background: $gray;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 10px;
+    margin: 10px 10px;
+    .service__block__content__img {
+        margin-top: 30px;
+        width: 200px;
+        height: 200px;
+        background: $easyBanana;
+        border: 5px solid $dark;
+        border-radius: 50%;
+        margin-right: 65px;
+        margin-bottom: 42px;
+        text-align: center;
+        svg {
+            margin-top: 34px;
+            animation-name: circle;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+    }
+    .service__block__content__text {
+        max-width: 450px;
+        width: 100%;
+        h3 {
+            margin: 0;
+            padding: 0;
+            margin-top: 50px;
+            margin-bottom: 40px;
+            font-family: $Balthazar;
+            font-size: 36px;
+            color: $dark;
+            font-weight: 400;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+            font-family: $Balthazar;
+            font-weight: 400;
+            font-size: 24px;
+            color: $dark;
+            max-width: 450px;
+            width: 100%;
+        }
+    }
+}
+// .service__block__content:hover {
+//     .service__block__content__img {
+//         border: 5px solid $darkGray;
+//         svg {
+//             transform: rotateY(360deg);
+//         }
+//     }
+// }
+@keyframes circle {
+    0% {
+        transform: rotateY(0);
+    }
+    100% {
+        transform: rotateY(360deg);
     }
 }
 
