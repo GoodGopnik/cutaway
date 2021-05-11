@@ -20,8 +20,9 @@
     justify-content: space-between;
     position: relative;
     .block__home__nav__img {
-        img {
-            padding-top: 50px;
+        svg {
+            padding-top: 60px;
+            padding-bottom: 50px;
         }
     }
     .block__home__menu {
@@ -202,6 +203,7 @@
         margin-right: 65px;
         margin-bottom: 42px;
         text-align: center;
+        transition: 0.5s;
         svg {
             margin-top: 34px;
             animation-name: circle;
@@ -235,14 +237,12 @@
         }
     }
 }
-// .service__block__content:hover {
-//     .service__block__content__img {
-//         border: 5px solid $darkGray;
-//         svg {
-//             transform: rotateY(360deg);
-//         }
-//     }
-// }
+.service__block__content:hover {
+    .service__block__content__img {
+        transition: 0.5s;
+        border: 5px solid $darkGray;
+    }
+}
 @keyframes circle {
     0% {
         transform: rotateY(0);
