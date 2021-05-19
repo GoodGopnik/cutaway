@@ -14,9 +14,3 @@ btn.addEventListener('click', () => {
     burgerBlock3.classList.toggle('burger__block3__active');
 })
 
-serviceBloks.addEventListener('click', () => {
-    blockHomeMenu.classList.toggle('display__block__nav');
-    burgerBlock1.classList.toggle('burger__block1__active');
-    burgerBlock2.classList.toggle('burger__block2__active');
-    burgerBlock3.classList.toggle('burger__block3__active');
-})
